@@ -8,18 +8,18 @@ modify_fun_matlab.exe: function to remove feature groups, to be called by gsa.m
 modify_fun_matlab.c: C-code.
 
 ==============================================================================
-Part 2. Predict if a set of compounds are aggregators or not using two established machine learning models
+# Part 2. Predict if a set of compounds are aggregators or not using two established machine learning models
 
-# Step 1A is to generate FP2 fingerprint using openbabel, and then run hex2bin to get binary file.
+Step 1A is to generate FP2 fingerprint using openbabel, and then run hex2bin to get binary file.
 
 babel -imol2 sample.mol2 -ofps sample_FP2.fs -xfFP2
 hex2bin.exe -i sample_FP2.fs -o sample_FP2.txt
 
-# Step 1B is to generate rdkit descriptor using python code. More details please refer to
+Step 1B is to generate rdkit descriptor using python code. More details please refer to
 https://www.rdkit.org/docs/index.html.
 The rdkit properties are listed in 'rdkit_prop.list'.
 
-# Step 2.
+Step 2.
 make prediction using predict_fp2.exe or predict_rdkit.exe
 
 predict_rdkit.exe -i test_rdkit.txt -o predict_rdkit.out
