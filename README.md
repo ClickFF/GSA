@@ -25,5 +25,6 @@ make prediction using Matlab. load SVM_fp2.mat or SVM_rdkit.mat first, then run 
 Alternatively, you may make prediction using the provided programs (predict_fp2.exe or predict_rdkit.exe) compiled in Windows:
 
 predict_rdkit.exe -i test_rdkit.txt -o predict_rdkit.out
+
 predict_fp2.exe -i test_fp2.txt -o predict_fp2.out
 
