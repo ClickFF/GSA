@@ -7,7 +7,7 @@ gsa.m: sample matlab code
 modify_fun_matlab.exe: function to remove feature groups, to be called by gsa.m
 modify_fun_matlab.c: C-code.
 
-==============================================================================
+===========================================================================
 # Part 2. Predict if a set of compounds are aggregators or not using two established machine learning models
 
 Step 1A is to generate FP2 fingerprint using openbabel, and then run hex2bin to get binary file.
